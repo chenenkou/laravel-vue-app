@@ -14,7 +14,12 @@ require('./bootstrap');
  */
 
 Vue.component('example', require('./components/Example.vue'));
+Vue.component('v-nav', require('./components/Nav/Nav.vue'));
+Vue.component('v-intro-panel', require('./components/IntroPanel/IntroPanel.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        msg: 'boot'
+    }
 });
