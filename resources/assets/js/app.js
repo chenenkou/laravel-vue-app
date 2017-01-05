@@ -13,7 +13,6 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
 Vue.component('v-nav', require('./components/Nav/Nav.vue'));
 Vue.component('v-intro-panel', require('./components/IntroPanel/IntroPanel.vue'));
 
