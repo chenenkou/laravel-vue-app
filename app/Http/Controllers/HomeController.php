@@ -10,8 +10,8 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     //
-    public function dashboard()
+    public function about()
     {
-        return view('dashboard');
+        return view('about');
     }
 }

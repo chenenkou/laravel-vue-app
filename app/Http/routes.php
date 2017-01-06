@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'dashboard'], function () {
-    Route::get('{path?}', 'HomeController@dashboard')->where('path', '[\/\w\.-]*');
+Route::group(['prefix' => 'about'], function () {
+    Route::get('{vue_capture?}', 'HomeController@about')->where('vue_capture', '[\/\w\.-]*');
 });

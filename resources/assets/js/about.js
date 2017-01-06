@@ -2,12 +2,8 @@ require('./bootstrap');
 
 import App from './App.vue'
 import VueRouter from 'vue-router';
-import Dashboard from './views/Dashboard/Dashboard.vue'
 
 Vue.use(VueRouter);
-
-const Foo = { template: '<div>foo</div>' };
-const Bar = { template: '<div>bar</div>' };
 
 // 2. 定义路由
 // 每个路由应该映射一个组件。 其中"component" 可以是
@@ -16,20 +12,20 @@ const Bar = { template: '<div>bar</div>' };
 // 我们晚点再讨论嵌套路由。
 const routes = [
     {
-        path: '/dashboard',
-        component: Dashboard,
+        path: '/about',
+        component: require('./views/About/About.vue'),
         children: [
             {
                 path: '/',
-                redirect: '/dashboard/foo'
+                redirect: '/about/intro'
             },
             {
-                path: 'foo',
-                component: Foo
+                path: 'intro',
+                component: require('./components/IntroMe/IntroMe.vue')
             },
             {
-                path: 'bar',
-                component: Bar
+                path: 'contact',
+                component: require('./components/ContactMe/ContactMe.vue')
             }
         ]
     }

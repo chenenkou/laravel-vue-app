@@ -5,13 +5,8 @@
     <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
 </head>
 <body>
-<div id="app">
-    <v-nav></v-nav>
-    <div class="container">
-        <v-intro-panel></v-intro-panel>
-    </div>
-</div>
+<div id="app"></div>
 
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/about.js') }}"></script>
 </body>
 </html>

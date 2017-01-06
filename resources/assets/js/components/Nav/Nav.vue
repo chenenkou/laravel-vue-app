@@ -30,7 +30,7 @@
             return{
                 navs: [
                     { name: 'Home', href: '/'},
-                    { name: 'Dashboard', href: '/dashboard'},
+                    { name: 'About', href: '/about'},
                     { name: 'Contact', href: '#'},
                 ]
             }
