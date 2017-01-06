@@ -11,9 +11,18 @@
         name: 'intro-me',
         data(){
             return{
-                title: '个人简介'
+                title: ''
             }
         },
-        components:{}
+        components:{},
+        created() {
+             this.$http.get('/api/about/getIntro').then((response) => {
+                // success callback
+                this.title = response.body.title;
+                // console.log(response);
+              }, (response) => {
+                // error callback
+              });
+        }
     }
 </script>

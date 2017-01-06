@@ -7,6 +7,10 @@
 <body>
 <div id="app"></div>
 
+<script>
+    window.Laravel = {};
+    Laravel.csrfToken = '{{ csrf_token() }}';
+</script>
 <script src="{{ asset('js/about.js') }}"></script>
 </body>
 </html>
