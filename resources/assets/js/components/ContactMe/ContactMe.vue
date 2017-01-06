@@ -1,7 +1,7 @@
 <template>
     <div class="jumbotron">
         <h1>{{ title }}</h1>
-        <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+        <p>{{ content }}</p>
     </div>
 </template>
 <style>
@@ -12,7 +12,8 @@
         name: 'contact-me',
         data(){
             return{
-                title: '联系方式'
+                title: '联系方式',
+                content: '...'
             }
         },
         components:{}
