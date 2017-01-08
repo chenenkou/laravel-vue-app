@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Laravel-Vue-App</title>
-    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
-</head>
-<body>
-<div id="app"></div>
+@extends('layouts.app')
 
-<script>
-    window.Laravel = {};
-    Laravel.csrfToken = "{{ csrf_token() }}";
-</script>
-<script src="{{ elixir('js/about.js') }}"></script>
-</body>
-</html>
+@section('content')
+    <div id="app"></div>
+@endsection
+
+@section('appendScript')
+    <script>
+        window.Laravel = {};
+        Laravel.csrfToken = "{{ csrf_token() }}";
+    </script>
+    <script src="{{ elixir('js/about.js') }}"></script>
+@endsection

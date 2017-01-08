@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Laravel-Vue-App</title>
-    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
-</head>
-<body>
-<div id="app">
-    <v-nav></v-nav>
-    <div class="container">
-        <v-intro-panel></v-intro-panel>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default">
+                <div class="panel-heading">Welcome</div>
+
+                <div class="panel-body">
+                    Your Application's Landing Page.
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<script src="{{ asset('js/app.js') }}"></script>
-</body>
-</html>
+@endsection

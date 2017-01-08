@@ -15,8 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
 Route::group(['prefix' => 'about'], function () {
-    Route::get('{vue_capture?}', 'HomeController@about')->where('vue_capture', '[\/\w\.-]*');
+    Route::get('{vue_capture?}', 'AboutController@index')->where('vue_capture', '[\/\w\.-]*');
 });
 
 Route::group(['prefix' => 'api'], function () {
