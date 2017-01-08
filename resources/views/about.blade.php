@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Laravel-Vue-App</title>
-    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 <div id="app"></div>
