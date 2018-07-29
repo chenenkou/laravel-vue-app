@@ -8,6 +8,8 @@
 <style>
 </style>
 <script>
+    import axios from 'axios'
+
     export default{
         name: 'intro-me',
         data(){
@@ -19,13 +21,13 @@
         },
         components:{},
         created() {
-             this.$http.get('/api/about/getIntro').then((response) => {
+            axios.get('/api/about/getIntro').then((response) => {
                 // success callback
+                console.log(response);
 
-                // console.log(response);
                 this.dataStatus = response.status;
-                this.title = response.body.title;
-                this.content = response.body.content;
+                this.title = response.data.title;
+                this.content = response.data.content;
               }, (response) => {
                 // error callback
 

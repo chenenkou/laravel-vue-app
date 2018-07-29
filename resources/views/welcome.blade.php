@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Laravel-Vue-App</title>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ mix('build/css/app.css') }}">
 </head>
 <body>
 <div id="app">
@@ -12,6 +12,6 @@
     </div>
 </div>
 
-<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ mix('build/js/app.js') }}"></script>
 </body>
 </html>

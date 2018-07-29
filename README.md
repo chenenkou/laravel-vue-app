@@ -13,11 +13,16 @@ git clone https://github.com/chenenkou/laravel-vue-app.git
 cd laravel-vue-app
 composer install
 php artisan key:generate
-gulp
+npm install
+npm run production
 ```
 3.代码提示
 ```
 php artisan clear-compiled
 php artisan ide-helper:generate
 php artisan optimize
+```
+4.启动测试服务
+```
+php artisan serve
 ```
