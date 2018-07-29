@@ -1,5 +1,5 @@
 # laravel-vue-app
-laravel5.2-vue2.0-示例app
+laravel5.2-vue2.x-示例app
 
 ## 安装
 1.克隆代码
@@ -20,4 +20,8 @@ gulp
 php artisan clear-compiled
 php artisan ide-helper:generate
 php artisan optimize
+```
+4.启动服务
+```
+php artisan serve
 ```
