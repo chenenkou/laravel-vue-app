@@ -9,5 +9,5 @@
         window.Laravel = {};
         Laravel.csrfToken = "{{ csrf_token() }}";
     </script>
-    <script src="{{ elixir('js/about.js') }}"></script>
+    <script src="{{ mix('build/js/about.js') }}"></script>
 @endsection

@@ -16,7 +16,6 @@
 
 </style>
 <script>
-    import Nav from '../../components/Nav/Nav.vue';
     import SideNav from '../../components/SideNav/SideNav.vue';
 
     export default{
@@ -27,7 +26,6 @@
             }
         },
         components:{
-            'v-nav': Nav,
             'v-side-nav': SideNav
         }
     }
