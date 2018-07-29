@@ -21,3 +21,7 @@ php artisan clear-compiled
 php artisan ide-helper:generate
 php artisan optimize
 ```
+4.启动服务
+```
+php artisan serve
+```
