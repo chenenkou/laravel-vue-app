@@ -25,7 +25,7 @@
 </style>
 <script>
     export default{
-        name: 'nav',
+        name: 'iNav',
         data(){
             return{
                 navs: [
