@@ -1,5 +1,5 @@
 # laravel-vue-app
-laravel5.1-vue2.0-示例app
+laravel5.1-vue2.x-示例app
 
 ## 安装
 1.克隆代码
@@ -13,7 +13,8 @@ git clone https://github.com/chenenkou/laravel-vue-app.git
 cd laravel-vue-app
 composer install
 php artisan key:generate
-gulp
+npm install
+npm run production
 ```
 3.代码提示
 ```
